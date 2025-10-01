@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Berita Desa Kading</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+  <style>
+    /* === COPY PASTE CSS DARI index.html DI SINI === */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: #333;
+    }
+    .header {
+      background: linear-gradient(135deg, seagreen 0%, darkolivegreen 100%);
+      color: white;
+      padding: 1rem 0;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    .nav-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 2rem;
+    }
+    .logo h1 { font-size: 1.8rem; font-weight: bold; }
+    .nav-menu { display: flex; list-style: none; gap: 2rem; }
+    .nav-menu a {
+      color: white; text-decoration: none; font-weight: 500;
+      transition: color 0.3s;
+    }
+    .nav-menu a:hover { color: #f39c12; }
+    .mobile-menu-btn { display: none; background: none; border: none; color: white; font-size: 1.5rem; cursor: pointer; }
+
+    .section-title {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 3rem;
+      color: #2c3e50;
+      position: relative;
+    }
+    .section-title::after {
+      content: ''; width: 100px; height: 3px; background: #f39c12;
+      position: absolute; bottom: -10px; left: 50%; transform: translateX(-50%);
+    }
+    .news-page { padding: 6rem 2rem 4rem; background: #f8f9fa; min-height: 100vh; }
+    .news-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 2rem; margin-top: 2rem;
+    }
+    .news-card {
+      background: white; border-radius: 15px; overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1); transition: transform 0.3s;
+    }
+    .news-card:hover { transform: translateY(-5px); }
+    .news-image { width: 100%; height: 200px; overflow: hidden; }
+    .news-image img {
+      width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease;
+    }
+    .news-card:hover .news-image img { transform: scale(1.05); }
+    .news-content { padding: 1.5rem; }
+    .news-date { color: #666; font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .news-title { font-size: 1.3rem; margin-bottom: 1rem; color: #2c3e50; }
+    .news-title a { text-decoration: none; color: inherit; }
+    .news-title a:hover { color: #f39c12; }
+    .footer {
+      background: #1a1a1a; color: white; text-align: center;
+      padding: 2rem 0; margin-top: 3rem;
+    }
+    @media (max-width: 768px) {
+      .nav-menu {
+        display: none; position: absolute; top: 100%; right: 0;
+        width: 200px; background: #2c3e50; flex-direction: column; padding: 1rem;
+        border-radius: 0 0 10px 10px;
+      }
+      .nav-menu.active { display: flex; }
+      .mobile-menu-btn { display: block; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="nav-container">
+      <div class="logo"><h1>Kading News</h1></div>
+    </div>
+  </header>
+
+  <!-- Halaman Berita -->
+  <section class="news-page">
+    <div class="container">
+      <h2 class="section-title">Berita Desa Kading</h2>
+      <div class="news-grid">
+        <!-- Card Berita -->
+         <div class="news-grid">
+   <div class="news-card fade-in">
+     <div class="news-image">
+       <img src="kpd.jpg">
+     </div>
+     <div class="news-content">
+       <div class="news-date"> September 2025</div>
+       <h3 class="news-title"><a href="penyerahan_rkpd.html">Musyawarah Desa Dalam Rangka Pembahasan dan Penetapatan Rancangan RKP Desa Kading Tahun Anggaran 2026</h3></a>
+       <p>Pemerintah Desa Kading menggelar Musyawarah Desa khusus untuk membahas dan menetapkan Rancangan Rencana Kerja Pemerintah (RKP) Desa Tahun Anggaran 2026. Kegiatan ini dilaksanakan di Balai Desa Kading pada tanggal 29 September 2025 dengan dihadiri Kepala Desa(H. Akmaluddin, S.Sos), perangkat desa, Badan Permusyawaratan Desa (BPD), perwakilan lembaga desa, tokoh masyarakat, Babinsa & Bhabinkatibmas, serta....</p>
+     </div>
+   </div>
+   <div class="news-card fade-in">
+     <div class="news-image">
+       <img src="bantuan1.jpeg">
+     </div>
+     <div class="news-content">
+       <div class="news-date">19 September 2025</div>
+       <h3 class="news-title"><a href="danadesa.html">Penyaluran BLT-Dana Desa Tahap IX Tahun 2025 Desa Kading</h3></a>
+       <p>Pemerintah Desa Kading melaksanakan penyaluran Bantuan Langsung Tunai (BLT) Dana Desa tahap IX (sembilan) Tahun 2025. Setiap keluarga penerima manfaat (KPM) menerima bantuan yang disalurkan secara bertahap melalui mekanisme yang telah ditetapkan oleh pemerintah desa....</p>
+     </div>
+   </div>
+   <div class="news-card fade-in">
+     <div class="news-image">
+       <img src="SENAM SEHAT.png" alt="senam" />
+     </div>
+     <div class="news-content">
+       <div class="news-date">19 September 2025</div>
+       <h3 class="news-title"><a href="senam.html">Senam Sehat, Tingkatkan Kebugaran dan Kekompakan Warga Desa Kading</h3></a>
+       <p>Sebagai upaya menjaga kesehatan dan kebersamaan warga, Pemerintah Desa Kading mengadakan kegiatan Senam Sehat Rutin setiap Jumat sore. Kegiatan ini berlangsung di halaman Balai Desa Kading dan selalu disambut antusias oleh masyarakat dari berbagai usia...</p>
+     </div>
+   </div>
+   <div class="news-card fade-in">
+     <div class="news-image">
+       <img src="lodge.jpg" alt="itulah">
+     </div>
+     <div class="news-content">
+       <div class="news-date">30 Agustus 2025</div>
+       <h3 class="news-title"><a href="pekkae.html">Pekkae Ecolodge and EcoRiver Cafe: Destinasi Ekowisata Yang Jarang Di Sorot Media di Desa Kading,Kabupaten Barru</h3></a>
+       <p>Di tengah pesona alam Desa Kading, terdapat sebuah destinasi ekowisata yang belum banyak diketahui publik: Pekkae Ecolodge and EcoRiver Cafe. Tempat ini menawarkan pengalaman menyatu dengan alam, memadukan akomodasi ramah lingkungan dengan...</p>
+     </div>
+   </div>
+ </div> <!-- end .news-grid -->
+       
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>Hak Cipta &copy; 2025 Pemerintah Desa Kading - Kecamatan Tanete Riaja, Kabupaten Barru.</p>
+    </div>
+  </footer>
+
+  <script>
+    const mobileMenuBtn = document.getElementById("mobileMenuBtn");
+    const navMenu = document.getElementById("navMenu");
+    mobileMenuBtn.addEventListener("click", () => {
+      navMenu.classList.toggle("active");
+    });
+  </script>
+</body>
+</html>
