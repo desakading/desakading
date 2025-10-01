@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pekkae Ecolodge & EcoRiver Cafe - Desa Kading</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #2c3e50;
+      color: #fff;
+      padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.5rem;
+    }
+
+    .hero-article {
+      position: relative;
+      height: 300px;
+      background: url("lodge.jpg") center/cover no-repeat;
+      border-radius: 0 0 20px 20px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      color: #fff;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    .hero-article h2 {
+      font-size: 2rem;
+      max-width: 900px;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.6);
+    }
+
+    .content-wrapper {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 2rem;
+      max-width: 1100px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    article {
+      background: #fff;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    }
+
+    article h3 {
+      margin-top: 1.5rem;
+      color: #2c3e50;
+    }
+
+    aside {
+      background: #fff;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    aside h4 {
+      margin-bottom: 1rem;
+      font-size: 1.2rem;
+      color: #3498db;
+    }
+
+    aside ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    aside ul li {
+      margin: 0.5rem 0;
+    }
+
+    aside ul li a {
+      text-decoration: none;
+      color: #2c3e50;
+      transition: color 0.2s;
+    }
+
+    aside ul li a:hover {
+      color: #3498db;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+      background: #2c3e50;
+      color: #fff;
+      border-radius: 20px 20px 0 0;
+    }
+    /* --- Responsive Upgrade --- */
+ /* Base style */
+html {
+  font-size: 16px;         /* desktop baseline */
+}
+
+body {
+  font-size: 1rem;         /* 1rem = 16px */
+  margin: 0;
+  padding: 0;
+}
+
+/* Grid wrapper: biar rapi di semua device */
+.content-wrapper {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* --- Responsive rules --- */
+
+/* Tablet & small laptops */
+@media (max-width: 1024px) {
+  html { font-size: 15px; }
+  .content-wrapper {
+    grid-template-columns: 1fr; /* tumpuk jadi satu kolom */
+  }
+  .hero-article {
+    height: 250px;
+  }
+  .hero-article h2 {
+    font-size: clamp(1.4rem, 3vw, 1.8rem);
+  }
+}
+
+/* Smartphones */
+@media (max-width: 600px) {
+  html { font-size: 14px; }
+  header h1 { font-size: 1.3rem; }
+  article { font-size: 1rem; }
+  .hero-article {
+    height: 200px;
+    padding: 1.5rem;
+  }
+  .hero-article h2 {
+    font-size: clamp(1.2rem, 5vw, 1.6rem);
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 360px) {
+  html { font-size: 13px; }
+}
+}
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Berita Desa Kading</h1>
+  </header>
+
+  <section class="hero-article">
+    <h2>Pekkae Ecolodge and EcoRiver Cafe: Destinasi Ekowisata Yang Jarang Disorot Media</h2>
+  </section>
+
+  <div class="content-wrapper">
+    <article>
+      <p><em>Desa Kading, Kabupaten Barru — 30 Agustus 2025</em></p>
+      <p>
+        Di tengah pesona alam Desa Kading, terdapat sebuah destinasi ekowisata yang belum banyak
+        diketahui publik: <strong>Pekkae Ecolodge and EcoRiver Cafe</strong>. Tempat ini menawarkan
+        pengalaman menyatu dengan alam, memadukan akomodasi ramah lingkungan dengan suasana sungai
+        yang tenang.
+      </p>
+
+      <h3>Penginapan Bernuansa Alam</h3>
+      <p>
+        Pekkae Ecolodge menghadirkan konsep penginapan sederhana namun nyaman, dikelilingi
+        pepohonan rindang dan udara segar khas pedesaan Barru. Setiap bangunan dirancang dengan
+        memanfaatkan material lokal, menciptakan suasana natural yang bersahabat dengan lingkungan.
+      </p>
+
+      <h3>EcoRiver Cafe</h3>
+      <p>
+        Tak hanya penginapan, EcoRiver Cafe yang terletak di tepi sungai menawarkan pengalaman unik
+        menikmati kuliner lokal ditemani suara gemericik air. Menu yang disajikan berasal dari bahan
+        segar masyarakat sekitar, mendukung UMKM desa dan memperkuat ekonomi lokal.
+      </p>
+
+      <h3>Potensi Ekowisata Desa Kading</h3>
+      <p>
+        Kehadiran Pekkae Ecolodge and EcoRiver Cafe menambah daya tarik wisata di Desa Kading,
+        selain destinasi alam lainnya. Meskipun jarang disorot media, tempat ini memiliki potensi
+        besar untuk menjadi ikon ekowisata Barru, khususnya bagi wisatawan yang mencari ketenangan
+        dan kedekatan dengan alam.
+      </p>
+      <p>Mahasiswa Kuliah Kerja Nyata (KKN) STIE Amkop Makassar Gelombang 32 melakukan kegiatan observasi di objek wisata Pekkae Lodge, Desa Kading, Kabupaten Barru, pada 30 Agustus 2025. Kegiatan ini merupakan bagian dari program kerja KKN untuk memetakan potensi wisata lokal sekaligus mendukung pengembangan ekonomi kreatif berbasis desa.
+<h3>Observasi dari Mahasiswa KKN STIE AMKOP MAKASSAR TAHUN 2025</h3>
+Selama observasi, tim KKN STIE AMKOP MAKASSAR berinteraksi langsung dengan perangkat desa untuk mengumpulkan data tentang daya tarik wisata, aksesibilitas, serta peluang peningkatan fasilitas. Mereka juga mencatat aspek lingkungan, kebersihan, dan potensi kegiatan ekonomi turunan—seperti kuliner lokal dan jasa pemandu—yang dapat dikembangkan untuk menarik lebih banyak wisatawan.
+
+Ketua kelompok KKN yakni Muh.Farid Alfarizky menyampaikan bahwa Pekkae Lodge memiliki potensi besar sebagai destinasi ekowisata karena keindahan alam sekitar, suasana yang tenang, dan dukungan masyarakat desa yang ramah. Temuan observasi ini akan menjadi dasar penyusunan rekomendasi strategis berupa promosi digital, paket wisata berbasis budaya, dan rencana pelatihan bagi warga untuk meningkatkan kualitas layanan wisata.</p>
+    </article>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Desa Kading, Kecamatan Tanete Riaja, Kabupaten Barru</p>
+  </footer>
+
+</body>
+</html>
